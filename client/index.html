@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Mean 101</title>
+    <link rel="stylesheet" href="/lib/materialize/bin/materialize.css" media="screen" title="no title">
   </head>
   <body>
     <div ng-app="mean101">
-      <div ng-controller="main">
-        <h1>{{title}}</h1>
-      </div>
+      <div ng-view></div>
     </div>
     <script src="/lib/angular/angular.min.js" charset="utf-8"></script>
+    <script src="/lib/angular-route/angular-route.min.js" charset="utf-8"></script>
+    <!-- <script src="/lib/materialize/bin/materialize.js" charset="utf-8"></script> -->
     <script src="/app/main.js" charset="utf-8"></script>
   </body>
 </html>

@@ -4,8 +4,9 @@
   <div class="col s1"></div>
   <div class="col s10">
     <h1>Chat Room</h1>
-    <form>
-      <input placeholder="Type your message here!" id="content" type="text">
+    <form ng-submit="sendMessage()">
+      <input placeholder="Your name" type="text" ng-model="author">
+      <input placeholder="Type your message here!" type="text" ng-model="content">
       <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
     </form>
   </div>
